@@ -46,7 +46,7 @@ export function ChatBoard() {
   }, [msgs]);
 
   const loadMessages = async () => {
-    if (!accessToken) return;
+    if (!accessToken || accessToken.trim() === "") return;
     setLoading(true);
     setError(null);
     try {
