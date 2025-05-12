@@ -10,8 +10,8 @@ const oidcConfig = {
   authority:
     'https://us-east-1_bDm4jlqL4.auth.us-east-1.amazoncognito.com',
   client_id: '2fcgrmmovvgt1sfo180bkp2kan',
-  redirect_uri: 'http://localhost:3000',
-  post_logout_redirect_uri: 'http://localhost:3000',
+  redirect_uri: 'https://staging.d1xsb7yotrm5oo.amplifyapp.com',
+  post_logout_redirect_uri: 'https://staging.d1xsb7yotrm5oo.amplifyapp.com',
   response_type: 'code',
   scope: 'openid email profile',
   metadata: {
