@@ -31,6 +31,7 @@ AWS API Gateway → Lambda (Node.js) → DynamoDB
           ▲
           |
      AWS Cognito (Auth)
+```
 
 ---
 
