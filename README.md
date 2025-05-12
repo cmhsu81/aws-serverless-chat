@@ -32,8 +32,10 @@ AWS API Gateway → Lambda (Node.js) → DynamoDB
           |
      AWS Cognito (Auth)
 
+---
 
 **##** 📦 **Tech Stack**
+
 Frontend: React, Bootstrap, AWS Amplify
 
 Backend: Node.js, AWS Lambda, API Gateway
