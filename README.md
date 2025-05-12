@@ -1,4 +1,4 @@
-# Serverless Chat Room (React + Node.js)
+# Serverless Chat Board (React + Node.js)
 
 A fully serverless web application for real-time chatting, built with modern cloud technologies and deployed via AWS Amplify Hosting.
 
