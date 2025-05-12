@@ -11,7 +11,9 @@ import {
   Spinner,
 } from 'react-bootstrap';
 
-function App() {
+
+
+export function ChatBoard() {
   const auth = useAuth();
   const [message, setMessage] = useState('');
   const [msgs, setMsgs] = useState([]);
@@ -19,7 +21,8 @@ function App() {
   const [error, setError] = useState(null);
   const chatBoxRef = useRef(null);
 
-  const token = auth.user?.access_token;
+  const token = auth.user?.id_token; // id_token for signout_hint
+  const accessToken = auth.user?.access_token;
   const username =
     auth.user?.profile.preferred_username ||
     auth.user?.profile.email ||
@@ -31,7 +34,7 @@ function App() {
   useEffect(() => {
     if (auth.isAuthenticated) {
       loadMessages();
-      const intervalId = setInterval(loadMessages, 5000);
+      const intervalId = setInterval(loadMessages, 8000);
       return () => clearInterval(intervalId);
     }
   }, [auth.isAuthenticated]);
@@ -43,7 +46,7 @@ function App() {
   }, [msgs]);
 
   const loadMessages = async () => {
-    if (!token) return;
+    if (!accessToken) return;
     setLoading(true);
     setError(null);
     try {
@@ -51,7 +54,7 @@ function App() {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
-          Authorization: `Bearer ${token}`,
+          Authorization: `Bearer ${accessToken}`,
         },
       });
       if (!response.ok) throw new Error(`Status ${response.status}`);
@@ -71,7 +74,7 @@ function App() {
 
   const sendMessage = async (e) => {
     e.preventDefault();
-    if (!message.trim() || !token) return;
+    if (!message.trim() || !accessToken) return;
     setError(null);
 
     try {
@@ -79,7 +82,7 @@ function App() {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          Authorization: `Bearer ${token}`,
+          Authorization: `Bearer ${accessToken}`,
         },
         body: JSON.stringify({ message, username }),
       });
@@ -122,7 +125,9 @@ function App() {
             <p className="fw-bold">Welcome! {username}</p>
             <Button
               variant="outline-danger"
-              onClick={() => auth.signoutRedirect()}
+              onClick={() =>
+                auth.signoutRedirect({ id_token_hint: token})
+              }
             >
               Sign Out
             </Button>
@@ -175,4 +180,6 @@ function App() {
   );
 }
 
-export default App;
+export default function App() {
+  return <ChatBoard />;
+}
