@@ -35,7 +35,7 @@ AWS API Gateway → Lambda (Node.js) → DynamoDB
 
 ---
 
-**##** 📦 **Tech Stack**
+## 📦 **Tech Stack**
 
 Frontend: React, Bootstrap, AWS Amplify
 
