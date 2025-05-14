@@ -2,7 +2,7 @@
 
 A fully serverless web application for real-time chatting, built with modern cloud technologies and deployed via AWS Amplify Hosting.
 
-🔗 **Live Demo**: [https://staging.d1xsb7yotrm5oo.amplifyapp.com/](https://staging.d1xsb7yotrm5oo.amplifyapp.com/)
+🔗 **Live Demo**: [https://prod.d1xsb7yotrm5oo.amplifyapp.com/](https://staging.d1xsb7yotrm5oo.amplifyapp.com/)
 
 ---
 
