@@ -1,0 +1,11 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-image: url("https://my-chat-board-prod.s3.us-east-1.amazonaws.com/background.JPG");
+  background-size: cover;          /* stretch to fill while preserving aspect */
+  background-position: top;     /* center the image */
+  background-repeat: no-repeat;    /* don’t tile */
+}

@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-serverlesschat-dev-974d1-authRole",
+      "UnauthRoleArn": "arn:aws:iam::515966516700:role/amplify-serverlesschat-dev-974d1-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::515966516700:role/amplify-serverlesschat-dev-974d1-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-serverlesschat-dev-974d1-deployment",
+      "UnauthRoleName": "amplify-serverlesschat-dev-974d1-unauthRole",
+      "StackName": "amplify-serverlesschat-dev-974d1",
+      "StackId": "arn:aws:cloudformation:us-east-1:515966516700:stack/amplify-serverlesschat-dev-974d1/97665c10-2b19-11f0-bef2-0ea18184ac3f",
+      "AmplifyAppId": "d1xsb7yotrm5oo"
+    },
+    "categories": {
+      "auth": {
+        "serverlesschat0f3e64a8": {}
+      }
+    }
+  }
+}
