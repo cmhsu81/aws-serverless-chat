@@ -1,4 +1,4 @@
-# Serverless Chat Board (React + Node.js)
+# Serverless Chat Board (AWS + React + Node.js)
 
 ![image](https://github.com/cmhsu81/aws-serverless-chat/blob/main/demo.png)
 
