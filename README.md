@@ -1,6 +1,6 @@
 # Serverless Chat Board (AWS + React + Node.js)
 
-![image](https://github.com/cmhsu81/aws-serverless-chat/blob/main/demo.png)
+![image](https://github.com/cmhsu81/aws-serverless-chat/blob/main/demo1.png)
 
 A fully serverless web application for real-time chatting, built with modern cloud technologies and deployed via AWS Amplify Hosting.
 
